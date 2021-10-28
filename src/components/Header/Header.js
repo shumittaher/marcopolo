@@ -23,7 +23,7 @@ const Header = () => {
 
                 <div className="flex items-center  space-x-4 px-5">
                     <span>Logged in as: {user.email}</span>
-                    <Link to="/admin"> <button className="p-2">Admin Page</button ></Link>
+                    <Link to="/admin"> <button className="p-2">Admin</button ></Link>
                     <button className="p-2" onClick={logOut}>LogOut</button>
                 </div>
 
