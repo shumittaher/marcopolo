@@ -11,7 +11,7 @@ const Header = () => {
         <div>
 
             <div className="flex h-16 items-center border-solid border-4 border-light-blue-500 mb-5">
-                <div className="flex-grow space-x-4 ">
+                <div className="flex-grow flex justify-start space-x-4 ">
 
                     <Link to="/home"><button className="p-2">Home</button></Link>
 
