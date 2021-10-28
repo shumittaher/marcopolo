@@ -13,16 +13,17 @@ const Header = () => {
             <div className="flex h-16 items-center border-solid border-4 border-light-blue-500 mb-5">
                 <div className="flex-grow space-x-4 ">
 
-                    <Link to="/Home"><button className="p-2">Home</button></Link>
+                    <Link to="/home"><button className="p-2">Home</button></Link>
 
-                    <Link to="/Login"> <button className="p-2">Login</button></Link>
+                    <Link to="/login"> <button className="p-2">Login</button></Link>
 
-                    <Link to="/Destinations"> <button className="p-2">Destinations</button ></Link>
+                    <Link to="/destinations"> <button className="p-2">Destinations</button ></Link>
                 </div>
 
 
                 <div className="flex items-center  space-x-4 px-5">
                     <span>Logged in as: {user.email}</span>
+                    <Link to="/admin"> <button className="p-2">Admin Page</button ></Link>
                     <button className="p-2" onClick={logOut}>LogOut</button>
                 </div>
 
