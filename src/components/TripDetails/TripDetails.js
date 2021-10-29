@@ -1,9 +1,12 @@
 import React, { useContext } from 'react'
+import { useLocation } from 'react-router';
 import { ToursContext } from '../../contexts/ToursProvider';
 
 const TripDetails = (props) => {
 
-    const { tourStart, tourEnd, id, _id } = props.trip
+    const location = useLocation()
+
+    const { tourStart, tourEnd, id, _id, userEmail } = props.trip
     const { schedule, setSchedule } = props
     const { tours } = useContext(ToursContext)
 
@@ -34,7 +37,9 @@ const TripDetails = (props) => {
         <tbody>
 
             <td><img src={imageLink} alt="" /></td>
-
+            {
+                location.pathname === '/admin' ? <td>{userEmail}</td> : ""
+            }
             <td>{nameOfTour}</td>
 
             <td>{place}</td>
