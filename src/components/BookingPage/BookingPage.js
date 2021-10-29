@@ -2,13 +2,13 @@ import React, { useContext } from 'react'
 import { useForm } from 'react-hook-form';
 import { useParams } from 'react-router'
 import useAuth from '../../hooks/useAuth';
-import { ToursContext } from './../../contexts/toursProvider';
+import { ToursContext } from '../../contexts/ToursProvider';
 
 const BookingPage = () => {
     const { id } = useParams()
     const { tours } = useContext(ToursContext)
-    const bookingItem = tours.filter((tour) => tour._id === id)
-    const { imageLink, nameOfTour, place, descrition, fee } = bookingItem[0]
+    const bookingItem = tours.find((tour) => tour._id === id)
+    const { imageLink, nameOfTour, place, descrition, fee } = bookingItem
 
     const { reset, register, handleSubmit } = useForm();
 

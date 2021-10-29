@@ -1,6 +1,6 @@
 import React, { useContext } from 'react'
 import BigTours from '../BigTours/BigTours'
-import { ToursContext } from '../../contexts/toursProvider'
+import { ToursContext } from '../../contexts/ToursProvider'
 
 
 const TourOffering = () => {

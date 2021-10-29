@@ -5,8 +5,9 @@ import Header from './components/Header/Header';
 import Home from './components/Home/Home';
 import Login from './components/Login/Login';
 import AuthProvider from './contexts/AuthProvider';
-import ToursProvider from './contexts/toursProvider';
+import ToursProvider from './contexts/ToursProvider';
 import PrivateRoute from './components/PrivateRoute/PrivateRoute';
+import MyPage from './components/MyPage/MyPage';
 
 
 function App() {
@@ -33,6 +34,10 @@ function App() {
 
               <PrivateRoute path="/booking/:id">
                 <BookingPage></BookingPage>
+              </PrivateRoute>
+
+              <PrivateRoute path="/userPage/:userEmail">
+                <MyPage></MyPage>
               </PrivateRoute>
 
               <Route path="/login">

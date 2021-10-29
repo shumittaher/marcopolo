@@ -17,23 +17,26 @@ const Header = () => {
 
 
                     <Link to="/destinations"> <button className="btn">Destinations</button ></Link>
-                
-                
+
+
                 </div>
 
 
                 <div className="flex items-center  space-x-4 px-5">
-                    <span>Logged in as: {user.email}</span>
-                    <Link to="/login"> <button className="btn">Login</button></Link>
+
+                    {user.email && <Link to={`/userPage/${user.email}`}> <button className="btn">Logged in as: {user.email} </button> </Link>}
+
+                    {!user.email && <Link to="/login"> <button className="btn">Login</button></Link>}
 
                     <Link to="/admin"> <button className="btn">Admin</button ></Link>
-                    <button className="btn" onClick={logOut}>LogOut</button>
+                    {user.email && <button className="btn" onClick={logOut}>LogOut</button>}
+                    
                 </div>
 
             </div>
 
 
-        </div>
+        </div >
     )
 }
 

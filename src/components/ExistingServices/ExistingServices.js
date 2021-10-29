@@ -1,5 +1,5 @@
 import React, { useContext } from 'react'
-import { ToursContext } from '../../contexts/toursProvider'
+import { ToursContext } from '../../contexts/ToursProvider'
 
 const ExistingServices = () => {
 

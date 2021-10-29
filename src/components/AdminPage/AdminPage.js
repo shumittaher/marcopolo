@@ -8,7 +8,7 @@ const AdminPage = () => {
 
     return (
         <div>
-            <div className="flex">
+            <div className="flex justify-center">
                 <AddServiceForm/>
                 <ExistingServices />
             </div>
