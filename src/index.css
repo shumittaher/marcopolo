@@ -5,3 +5,10 @@
 .btn{
   @apply p-2 border-4 border-blue-300	
 }
+.ttl{
+  @apply text-center	font-semibold	
+}
+
+.small-container{
+  @apply w-80 border p-5
+}

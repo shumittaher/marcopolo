@@ -28,8 +28,8 @@ const AddServiceForm = () => {
 
     return (
         <div>
-             <div className="max-w-md">
-                <h6>Add New Tours</h6>
+             <div className="small-container">
+                <h6 className="ttl">Add New Tours</h6>
 
                 <form className='flex-col flex' onSubmit={handleSubmit(onSubmit)}>
 
@@ -48,7 +48,7 @@ const AddServiceForm = () => {
                     <input placeholder="Image Link" {...register("imageLink", { required: true })} />
                     {errors.imageLink && <span>This field is required</span>}
 
-                    <input className="p-5 m-5" type="submit" value="Add to DB" />
+                    <input className="m-5 btn" type="submit" value="Add to DB" />
 
                 </form>
 

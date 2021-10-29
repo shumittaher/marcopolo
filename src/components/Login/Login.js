@@ -7,10 +7,10 @@ const Login = () => {
     const { signInWithGoogle } = useAuth()
 
     return (
-        <div>
+        <div className="items-center flex flex-col">
 
 
-            <button onClick={signInWithGoogle}> Sign In with Google</button>
+            <button className="btn" onClick={signInWithGoogle}> Sign In with Google</button>
 
 
         </div>
