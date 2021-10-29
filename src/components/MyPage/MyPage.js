@@ -18,30 +18,31 @@ const MyPage = () => {
     return (
         <div className="flex justify-center border">
             <div className="text-center	">
+
                 <h1>Tours planned for : {email}</h1>
                 <p>You have {schedule.length} destinations planned</p>
 
-                <div className="mt-5">
-                    <div className="flex justify-center">
+                <div className="flex mt-5 justify-center">
 
 
-                        <table className="table-auto">
-                            <thead>
-                                <tr>
-                                    <th>Destination</th>
-                                    <th>Place</th>
-                                    <th>Trip Start Date</th>
-                                    <th>Trip End Date</th>
-                                    <th>Cost</th>
-                                    <th>Delete?</th>
-                                </tr>
-                            </thead>
-                            {
-                                schedule.map((trip) => <TripDetails key={trip._id} trip={trip}></TripDetails>)
-                            }
-                        </table>
+                    <table className="table-auto">
+                        <thead>
+                            <tr>
+                                <th></th>
+                                <th>Destination</th>
+                                <th>Place</th>
+                                <th>Trip Start Date</th>
+                                <th>Trip End Date</th>
+                                <th>Cost</th>
+                                <th>Delete?</th>
+                            </tr>
+                        </thead>
+                        {
+                            schedule.map((trip) => <TripDetails key={trip._id} trip={trip} schedule={schedule}
+                                setSchedule={setSchedule}></TripDetails>)
+                        }
+                    </table>
 
-                    </div>
                 </div>
             </div>
         </div>

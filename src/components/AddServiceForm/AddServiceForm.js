@@ -7,7 +7,6 @@ const AddServiceForm = () => {
     const { reset, register, handleSubmit, formState: { errors } } = useForm();
 
     const onSubmit = data => {
-        console.log(data)
 
         fetch('http://localhost:5000/addService', {
             method: 'POST',

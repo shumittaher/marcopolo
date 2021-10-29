@@ -5,7 +5,6 @@ const BigTours = (props) => {
 
     const {_id, imageLink, nameOfTour, descrition, place } = props.tour
 
-    console.log(props.tour)
 
     return (
         <div className="flex border">

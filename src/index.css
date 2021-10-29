@@ -28,5 +28,12 @@
 }
 
 td{
-  @apply px-5 py-2
+  @apply p-2 
+}
+th{
+  @apply p-2
+}
+
+td img{
+  @apply h-24	w-24 object-cover rounded-full	
 }

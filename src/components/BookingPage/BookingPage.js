@@ -22,7 +22,6 @@ const BookingPage = () => {
             alert('please recheck schdule, Start date is later than end Date')
             reset()
         } else {
-            console.log(data)
             const userEmail = user.email
             const newSchedule = { userEmail, id, tourStart, tourEnd }
 
