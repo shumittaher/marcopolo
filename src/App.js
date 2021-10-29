@@ -1,17 +1,18 @@
 import { BrowserRouter, Switch, Route } from 'react-router-dom';
-import './App.css';
 import AdminPage from './components/AdminPage/AdminPage';
 import Header from './components/Header/Header';
 import Home from './components/Home/Home';
 import Login from './components/Login/Login';
 import AuthProvider from './contexts/AuthProvider';
+import ToursProvider from './contexts/toursProvider';
 
 
 function App() {
   return (
-    <div className="App">
+    <div className="">
 
       <AuthProvider>
+        <ToursProvider>
         <BrowserRouter>
           <Header />
           <Switch>
@@ -35,7 +36,7 @@ function App() {
 
           </Switch>
         </BrowserRouter>
-
+        </ToursProvider>
       </AuthProvider>
 
     </div>
