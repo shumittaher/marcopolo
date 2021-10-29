@@ -7,7 +7,7 @@ const BigTours = (props) => {
 
 
     return (
-        <div className="flex border">
+        <div className="flex border-2 mb-12 rounded">
 
             <div className="w-2/4 h-auto border">
                 <img className="object-cover w-full h-full" src={imageLink} alt="" />

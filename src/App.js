@@ -8,6 +8,7 @@ import AuthProvider from './contexts/AuthProvider';
 import ToursProvider from './contexts/ToursProvider';
 import PrivateRoute from './components/PrivateRoute/PrivateRoute';
 import MyPage from './components/MyPage/MyPage';
+import TourOffering from './components/TourOffering/TourOffering';
 
 
 function App() {
@@ -29,7 +30,7 @@ function App() {
               </Route>
 
               <Route path="/destinations">
-                <Home></Home>
+                <TourOffering></TourOffering>
               </Route>
 
               <PrivateRoute path="/booking/:id">

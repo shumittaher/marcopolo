@@ -17,7 +17,7 @@ const MyPage = () => {
     console.log(schedule)
 
     return (
-        <div className="flex justify-center border">
+        <div className="flex justify-center border pt-20">
             <div className="text-center	">
 
                 <h1>Tours planned for : {email}</h1>

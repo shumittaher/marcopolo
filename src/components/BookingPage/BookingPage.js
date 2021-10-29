@@ -45,7 +45,7 @@ const BookingPage = () => {
 
 
     return (
-        <div className="flex justify-center border">
+        <div className="flex justify-center border pt-20">
 
             <div className="w-2/4 h-auto border">
                 <img className="object-cover w-full h-full" src={imageLink} alt="" />
