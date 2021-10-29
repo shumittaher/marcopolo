@@ -1,8 +1,9 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 const BigTours = (props) => {
 
-    const { imageLink, nameOfTour, descrition, place, fee } = props.tour
+    const {_id, imageLink, nameOfTour, descrition, place } = props.tour
 
     console.log(props.tour)
 
@@ -18,13 +19,13 @@ const BigTours = (props) => {
                     <h1 className="ttl mb-5">
                         {nameOfTour}
                     </h1>
-                    <p>{place}</p>
+                    <p className="mb-5">{place}</p>
 
                     <small>
                         {descrition}
                     </small>
                 </div>
-                <button className="btn mt-5">Book Now</button>
+                <Link to={`/booking/${_id}`}><button className="btn mt-5">Book Now</button></Link>
             </div>
 
         </div>

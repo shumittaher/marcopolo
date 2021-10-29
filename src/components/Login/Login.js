@@ -1,16 +1,33 @@
 import React from 'react'
+import { useHistory, useLocation } from 'react-router';
 import useAuth from './../../hooks/useAuth';
 
 
 const Login = () => {
 
-    const { signInWithGoogle } = useAuth()
+    const { signInWithGoogle, setUser, setError, setIsLoading } = useAuth()
+
+    const location = useLocation()
+    const history = useHistory()
+    const redirect_url = location.state?.from || '/'
+
+
+    const handleSignInWithGoogle = () => {
+        signInWithGoogle().then((result) => {
+            setUser(result.user);
+        }).catch((error) => {
+            setError(error.message);
+        }).finally(() => {
+            setIsLoading(false)
+            history.push(redirect_url)
+        });
+    }
 
     return (
         <div className="items-center flex flex-col">
 
 
-            <button className="btn" onClick={signInWithGoogle}> Sign In with Google</button>
+            <button className="btn" onClick={handleSignInWithGoogle}> Sign In with Google</button>
 
 
         </div>
