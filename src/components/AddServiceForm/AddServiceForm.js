@@ -8,7 +8,7 @@ const AddServiceForm = () => {
 
     const onSubmit = data => {
 
-        fetch('http://localhost:5000/addService', {
+        fetch('https://pacific-cove-20307.herokuapp.com/addService', {
             method: 'POST',
             headers: {
                 'content-type': 'application/json'

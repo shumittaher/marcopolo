@@ -25,7 +25,7 @@ const BookingPage = () => {
             const userEmail = user.email
             const newSchedule = { userEmail, id, tourStart, tourEnd }
 
-            fetch('http://localhost:5000/addSchedule', {
+            fetch('https://pacific-cove-20307.herokuapp.com/addSchedule', {
                 method: 'POST',
                 headers: {
                     'content-type': 'application/json'

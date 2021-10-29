@@ -6,7 +6,7 @@ const useTours = () => {
     const [tours, setTours] = useState([])
 
     useEffect(() => {
-        fetch('http://localhost:5000/services')
+        fetch('https://pacific-cove-20307.herokuapp.com/services')
             .then(res => res.json())
             .then(result => {
                 setTours(result)

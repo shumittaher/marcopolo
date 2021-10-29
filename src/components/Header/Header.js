@@ -8,9 +8,9 @@ const Header = () => {
     const { user, logOut } = useAuth()
 
     return (
-        <div>
+        <div className="text-white bg-gray-400 bg-opacity-50 absolute w-full z-10">
 
-            <div className="flex h-16 items-center border-solid border-4 border-light-blue-500 mb-5">
+            <div className="flex h-16 items-center ">
                 <div className="flex-grow flex justify-start space-x-4 ml-5">
 
                     <Link to="/home"><button className="btn">Home</button></Link>

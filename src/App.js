@@ -12,7 +12,7 @@ import MyPage from './components/MyPage/MyPage';
 
 function App() {
   return (
-    <div className="app">
+    <div className="app ">
 
       <AuthProvider>
         <ToursProvider>

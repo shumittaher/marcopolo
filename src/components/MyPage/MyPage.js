@@ -9,7 +9,7 @@ const MyPage = () => {
     const [schedule, setSchedule] = useState([])
 
     useEffect(() => {
-        fetch(`http://localhost:5000/schedule/${email}`)
+        fetch(`https://pacific-cove-20307.herokuapp.com/schedule/${email}`)
             .then(res => res.json())
             .then(data => setSchedule(data));
     }, [email])

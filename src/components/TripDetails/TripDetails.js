@@ -18,7 +18,7 @@ const TripDetails = (props) => {
         const confirm = window.confirm("Are you sure?")
 
         if (confirm) {
-            fetch(`http://localhost:5000/schedule/${_id}`, {
+            fetch(`https://pacific-cove-20307.herokuapp.com/schedule/${_id}`, {
                 method: 'DELETE'
             })
                 .then(res => res.json())

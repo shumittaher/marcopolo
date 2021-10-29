@@ -6,7 +6,7 @@ const AllTrips = () => {
     const [allSchedules, setAllSchedules] = useState([])
 
     useEffect(() => {
-        fetch('http://localhost:5000/allSchedules')
+        fetch('https://pacific-cove-20307.herokuapp.com/allSchedules')
             .then(res => res.json())
             .then(result => {
                 setAllSchedules(result)

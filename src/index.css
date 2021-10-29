@@ -4,8 +4,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
 .btn{
-  @apply p-2 px-5 border-4 border-blue-300	rounded-full			
+  @apply py-2 px-5 rounded-full hover:bg-blue-700 hover:text-white	hover:border-blue-300	border-2
 }
+
 .ttl{
   @apply text-center	font-semibold	text-xl	
 }
