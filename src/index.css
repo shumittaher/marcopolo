@@ -30,7 +30,7 @@
 
 .app {
   font-family: 'Roboto', sans-serif;
-  background-color: rgba(183, 227, 235, 0.322);
+  background-image: url('images/background/bg.jpg');
 }
 
 td{
