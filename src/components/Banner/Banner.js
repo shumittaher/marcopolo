@@ -1,27 +1,26 @@
 import React, { useEffect, useState } from 'react'
+import { Link } from 'react-router-dom'
+import image1 from '../../images/banner/1.jpg'
+import image2 from '../../images/banner/2.jpg'
+import image3 from '../../images/banner/3.jpg'
+import image4 from '../../images/banner/4.jpg'
+import image5 from '../../images/banner/5.jpg'
+import image6 from '../../images/banner/6.jpg'
+
+export const imageArray = [
+    image1, image2, image3, image4, image5, image6
+]
 
 const Banner = () => {
 
     const [bannerImage, setBannerImage] = useState(0)
 
-
-    const imageArray = [
-        'https://i.ibb.co/Wy01005/pexels-quang-nguyen-vinh-2132180.jpg',
-        'https://i.ibb.co/BVyXhRb/pexels-alexandr-podvalny-2166553.jpg',
-        'https://i.ibb.co/kBzfKfy/pexels-andrei-tanase-1271619.jpg',
-        'https://i.ibb.co/8NnBCsm/pexels-alexandr-podvalny-2082949.jpg',
-        'https://i.ibb.co/17Y29V8/pexels-dimitry-anikin-5043948.jpg',
-        'https://i.ibb.co/7NwSFnK/pexels-asad-photo-maldives-1591373.jpg',
-    ]
-
-
     useEffect(() => {
         setTimeout(() => { (bannerImage < 5) ? setBannerImage(bannerImage + 1) : setBannerImage(0) }, 5000)
-        console.log(bannerImage)
     }, [bannerImage])
 
     return (
-        <div className="relative">
+        <div className="h-full">
 
             <div className="w-full h-full">
                 <img className="object-cover w-screen h-screen" src={imageArray[bannerImage]} alt="" />
@@ -30,6 +29,11 @@ const Banner = () => {
             <div className="absolute top-1/3 w-full text-center text-white z-10 ">
                 <h6 className="text-4xl">Find your special tour today</h6>
                 <h1 className="text-8xl "> With Marco Polo Tours</h1>
+
+                <Link to="/destinations"><button className="btn-big">
+                    Explore More
+                </button></Link>
+
             </div>
 
 
