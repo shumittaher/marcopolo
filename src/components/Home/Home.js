@@ -6,11 +6,11 @@ import NeverAlone from '../NeverAlone/NeverAlone'
 const Home = () => {
     return (
 
-        <div className="items-center flex flex-col">
+        <div className="items-center flex flex-col ">
             <Banner />
             <HomePageOfferings />
             <NeverAlone />
-            
+
         </div>
     )
 }

@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import useAuth from './../../hooks/useAuth';
-
+import headerlogo from '../../images/designpics/headerlogo.png'
 
 const Header = () => {
 
@@ -11,7 +11,11 @@ const Header = () => {
         <div className="text-white bg-gray-400 bg-opacity-50 absolute w-full z-10">
 
             <div className="flex h-16 items-center ">
+
+                <img src={headerlogo} className="w-48 self-start " alt="" />
+
                 <div className="flex-grow flex justify-start space-x-4 ml-5">
+
 
                     <Link to="/home"><button className="btn">Home</button></Link>
 
@@ -30,7 +34,7 @@ const Header = () => {
 
                     <Link to="/admin"> <button className="btn">Admin</button ></Link>
                     {user.email && <button className="btn" onClick={logOut}>LogOut</button>}
-                    
+
                 </div>
 
             </div>

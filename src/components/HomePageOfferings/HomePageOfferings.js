@@ -19,7 +19,7 @@ const HomePageOfferings = () => {
     }
 
     return (
-        <section className="my-12 flex flex-col w-full max-w-6xl justify-center items-center relative text-center">
+        <section className="my-12 flex flex-col w-full max-w-6xl justify-center items-center relative text-center ">
             
             
             <svg onClick={prevSlide} className="w-20 h-20 left-0 cursor-pointer	absolute z-10 opacity-70" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="black">

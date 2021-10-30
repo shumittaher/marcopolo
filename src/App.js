@@ -9,6 +9,8 @@ import ToursProvider from './contexts/ToursProvider';
 import PrivateRoute from './components/PrivateRoute/PrivateRoute';
 import MyPage from './components/MyPage/MyPage';
 import TourOffering from './components/TourOffering/TourOffering';
+import NotFound from './components/NotFound/NotFound';
+import Footer from './components/Footer/Footer';
 
 
 function App() {
@@ -49,8 +51,12 @@ function App() {
                 <AdminPage></AdminPage>
               </Route>
 
+              <Route path="*">
+                <NotFound></NotFound>
+              </Route>
 
             </Switch>
+            <Footer />
           </BrowserRouter>
         </ToursProvider>
       </AuthProvider>
