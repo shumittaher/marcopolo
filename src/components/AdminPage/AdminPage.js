@@ -11,9 +11,14 @@ const AdminPage = () => {
         <div className="pt-20">
             <div className="flex justify-center">
                 <AddServiceForm />
+
+
                 <ExistingServices />
             </div>
-            <AllTrips/>
+
+            <h1 className="my-10 text-2xl text-center">Booked Tours</h1>
+
+            <AllTrips />
         </div>
     )
 }

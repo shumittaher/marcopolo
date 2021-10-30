@@ -28,7 +28,7 @@ const Header = () => {
 
                 <div className="flex items-center  space-x-4 px-5">
 
-                    {user.email && <Link to={`/userPage/${user.email}`}> <button className="btn">Logged in as: {user.email} </button> </Link>}
+                    {user.email && <Link to={`/userPage/${user.email}`}> <button className="btn">Visit your page: {user.email} </button> </Link>}
 
                     {!user.email && <Link to="/login"> <button className="btn">Login</button></Link>}
 
