@@ -6,7 +6,7 @@ const PrivateRoute = ({ children, ...rest }) => {
     const { user, isLoading } = useAuth();
 
     if (isLoading) return (
-        <div className="flex justify-center">
+        <div className="flex justify-center pt-32">
             <div className="loader"></div>
         </div>
     );

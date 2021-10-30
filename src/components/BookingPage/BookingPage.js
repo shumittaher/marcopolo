@@ -5,14 +5,25 @@ import useAuth from '../../hooks/useAuth';
 import { ToursContext } from '../../contexts/ToursProvider';
 
 const BookingPage = () => {
-    const { id } = useParams()
-    const { tours } = useContext(ToursContext)
-    const bookingItem = tours.find((tour) => tour._id === id)
-    const { imageLink, nameOfTour, place, descrition, fee } = bookingItem
-
     const { reset, register, handleSubmit } = useForm();
 
     const { user } = useAuth()
+
+    const { id } = useParams()
+
+    const { tours } = useContext(ToursContext)
+
+    if (tours.length === 0) {
+        return <div className="flex justify-center pt-32">
+            <div className="loader"></div>
+        </div>
+    }
+
+    const bookingItem = tours.find((tour) => tour._id === id)
+
+    const { imageLink, nameOfTour, place, descrition, fee } = bookingItem
+
+
 
     const onSubmit = data => {
         const tourStart = data.startDate
@@ -45,7 +56,7 @@ const BookingPage = () => {
 
 
     return (
-        <div className="flex justify-center border pt-20">
+        <div className="flex justify-center border pt-32">
 
             <div className="w-2/4 h-auto border">
                 <img className="object-cover w-full h-full" src={imageLink} alt="" />

@@ -9,7 +9,7 @@ const TourOffering = () => {
 
 
     return (
-        <div className="items-center flex flex-col pt-20">
+        <div className="items-center flex flex-col pt-32">
 
             <h1 className="ttl mb-5">Your Destinations Await...</h1>
 

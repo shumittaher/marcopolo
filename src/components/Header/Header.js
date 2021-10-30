@@ -8,9 +8,8 @@ const Header = () => {
     const { user, logOut } = useAuth()
 
     return (
-        <div className="text-white bg-gray-400 bg-opacity-50 absolute w-full z-10">
+        <div className="text-white bg-gray-400 bg-opacity-50 absolute w-full z-10 flex h-24 items-center ">
 
-            <div className="flex h-16 items-center ">
 
                 <img src={headerlogo} className="w-48 self-start " alt="" />
 
@@ -37,7 +36,6 @@ const Header = () => {
 
                 </div>
 
-            </div>
 
 
         </div >
