@@ -14,7 +14,11 @@ const MyPage = () => {
             .then(data => setSchedule(data));
     }, [email])
 
-    console.log(schedule)
+    if (schedule.length === 0) {
+        return <div className="flex justify-center pt-32">
+            <div className="loader"></div>
+        </div>
+    }
 
     return (
         <div className="flex justify-center border pt-32">
@@ -38,13 +42,13 @@ const MyPage = () => {
                                 <th>Delete?</th>
                             </tr>
                         </thead>
-                       
-                            {
-                                schedule.map((trip) => <TripDetails key={trip._id} trip={trip} schedule={schedule}
-                                    setSchedule={setSchedule}></TripDetails>)
-                            }
-                            
-                        
+
+                        {
+                            schedule.map((trip) => <TripDetails key={trip._id} trip={trip} schedule={schedule}
+                                setSchedule={setSchedule}></TripDetails>)
+                        }
+
+
 
                     </table>
 

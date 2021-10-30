@@ -13,6 +13,12 @@ const AllTrips = () => {
             })
     }, [])
 
+    if (allSchedules.length === 0) {
+        return <div className="flex justify-center pt-32">
+            <div className="loader"></div>
+        </div>
+    }
+
     return (
         <div className="flex justify-center border">
             <div className="text-center	">
