@@ -1,5 +1,6 @@
 import React from 'react'
 import { useHistory } from 'react-router';
+import blueunderline from '../../images/designpics/blueunderline.png'
 
 const OfferingCards = (props) => {
 
@@ -22,7 +23,7 @@ const OfferingCards = (props) => {
                         width: '50rem',
                         height: '35rem',
                     }}
-                    className="border-8 rounded overflow-hidden">
+                    className="border-8 rounded overflow-hidden ">
                     <img
                         className="object-cover w-full 	h-full
                         transition duration-1000 ease-in-out 
@@ -33,19 +34,21 @@ const OfferingCards = (props) => {
                 <div
                     style={{
                         width: '52rem',
+                       
+                            fontFamily: `'Dancing Script', cursive`
+                      
                     }}
-                    className="absolute -bottom-2 flex justify-between items-center">
+                    className="absolute -bottom-2 flex justify-between items-center ">
 
-                    <div className="h-44 w-44  bg-yellow-100 flex flex-col justify-center items-center">
-                        <h1 className="mb-5">
+                    <div className="h-44 w-44  bg-yellow-100 flex flex-col justify-center items-center ">
+                        <h1 className="text-2xl  font-bold z-10">
                             Book For
                         </h1>
 
-                        <div className="border-dashed	border-t-2 border-gray-500 w-3/4 h-1">
-                        </div>
+                        <img className="absolute w-20 z-0" src={blueunderline} alt="" />
                         
-                        <h1 className="mt-5">
-                            BDT {fee} Only!
+                        <h1 className="text-md font-bold z-10">
+                            BDT {fee}  Only!
                         </h1>
                     </div>
 
@@ -62,11 +65,17 @@ const OfferingCards = (props) => {
                     </div>
 
                     
-                    <div className="h-44 w-44  bg-yellow-100 flex flex-col justify-center items-center">
+                    <div className="h-44 w-44  bg-yellow-100 flex flex-col justify-center items-center ">
                         
-                        <h1>
+                        <h1 className="text-2xl p-4 font-bold z-10"
+                        style={{
+                            fontFamily: `'Dancing Script', cursive`
+                        }}
+                        >
                             {place}
                         </h1>
+
+<img className="absolute w-20 z-0" src={blueunderline} alt="" />
 
                     </div>
 
