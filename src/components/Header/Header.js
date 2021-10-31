@@ -10,7 +10,7 @@ const Header = () => {
     const { user, logOut } = useAuth()
 
     return (
-        <div className="text-white bg-gray-400 bg-opacity-50 absolute w-full z-10 flex h-24 items-center ">
+        <div className="text-white bg-gray-400 bg-opacity-50 absolute w-full z-10 flex h-24 items-center justify-between">
 
 
                 <img src={headerlogo} className="md:w-48 w-32 self-start " alt="" />
@@ -38,8 +38,10 @@ const Header = () => {
                     <Link to="/admin"> <button className="btn">Admin</button ></Link>
                     {user.email && <button className="btn" onClick={logOut}>LogOut</button>}
 
+
                 </div>
 
+                    <i className="fas fa-bars block text-5xl md:hidden mr-5"></i>
 
 
         </div >

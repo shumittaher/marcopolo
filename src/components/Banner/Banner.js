@@ -27,8 +27,8 @@ const Banner = () => {
             </div>
 
             <div className="absolute top-1/3 w-full text-center text-white z-10 ">
-                <h6 className="text-4xl text-indigo-900	font-bold	">Find your special tour today</h6>
-                <h1 className="text-8xl "> With Marco Polo Tours</h1>
+                <h6 className="md:text-4xl text-xl text-indigo-900	font-bold	">Find your special tour today</h6>
+                <h1 className="md:text-8xl text-4xl"> With Marco Polo Tours</h1>
 
                 <Link to="/destinations"><button className="btn-big ">
                     Explore More
