@@ -16,14 +16,15 @@ const OfferingCards = (props) => {
     return (
         <div>
 
-            <div className="flex-col flex items-center rounded-2xl p-5 relative">
+            <div className="flex-col flex items-center rounded-2xl p-5 relative w-full">
 
                 <div
                     style={{
-                        width: '50rem',
+                        width: '48rem',
                         height: '35rem',
                     }}
-                    className="border-8 rounded overflow-hidden ">
+                    className="border-8 rounded overflow-hidden max-w-sm md:max-w-3xl
+                    max-h-96 md:max-h-full">
                     <img
                         className="object-cover w-full 	h-full
                         transition duration-1000 ease-in-out 
@@ -38,22 +39,22 @@ const OfferingCards = (props) => {
                             fontFamily: `'Dancing Script', cursive`
                       
                     }}
-                    className="absolute -bottom-2 flex justify-between items-center ">
+                    className="md:absolute -bottom-2 flex justify-between items-center max-w-sm md:max-w-4xl">
 
-                    <div className="h-44 w-44  bg-yellow-100 flex flex-col justify-center items-center ">
-                        <h1 className="text-2xl  font-bold z-10">
+                    <div className="md:h-44 md:w-44 h-12 w-20 bg-yellow-100 flex flex-col justify-center items-center ">
+                        <h1 className="md:text-2xl  font-bold z-10">
                             Book For
                         </h1>
 
                         <img className="absolute w-20 z-0" src={blueunderline} alt="" />
                         
-                        <h1 className="text-md font-bold z-10">
-                            BDT {fee}  Only!
+                        <h1 className="md:text-md font-bold z-10">
+                             {fee} 
                         </h1>
                     </div>
 
                     <div
-                        className="px-10 cursor-pointer py-5 flex flex-col border-2 rounded-full justify-between  items-center  bg-gray-400 bg-opacity-50 z-10 text-white
+                        className="md:px-10 cursor-pointer md:py-5 flex flex-col border-2 rounded-full justify-between  items-center  bg-gray-400 bg-opacity-50 z-10 text-white
                 hover:bg-gray-300 hover:text-black 	hover:border-gray-700"
                         onClick={seeMore}>
 
@@ -65,12 +66,10 @@ const OfferingCards = (props) => {
                     </div>
 
                     
-                    <div className="h-44 w-44  bg-yellow-100 flex flex-col justify-center items-center ">
+                    <div className="md:h-44 md:w-44 h-12 w-20 bg-yellow-100 flex flex-col justify-center items-center ">
                         
-                        <h1 className="text-2xl p-4 font-bold z-10"
-                        style={{
-                            fontFamily: `'Dancing Script', cursive`
-                        }}
+                        <h1 className="md:text-2xl md:p-4 font-bold z-10"
+                      
                         >
                             {place}
                         </h1>

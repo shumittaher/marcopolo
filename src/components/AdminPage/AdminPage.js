@@ -9,7 +9,7 @@ const AdminPage = () => {
 
     return (
         <div className="pt-32">
-            <div className="flex justify-center">
+            <div className="flex md:flex-row flex-col items-center justify-center">
                 <AddServiceForm />
 
 

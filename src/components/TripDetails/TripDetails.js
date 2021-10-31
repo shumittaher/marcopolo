@@ -36,9 +36,9 @@ const TripDetails = (props) => {
 
         <tbody>
 
-            <td><img src={imageLink} alt="" /></td>
+            <td className="hidden md:inline"><img src={imageLink} alt="" /></td>
             {
-                location.pathname === '/admin' ? <td>{userEmail}</td> : ""
+                location.pathname === '/admin' ? <td className="hidden md:table-cell">{userEmail}</td> : ""
             }
             <td>{nameOfTour}</td>
 

@@ -13,9 +13,9 @@ const Header = () => {
         <div className="text-white bg-gray-400 bg-opacity-50 absolute w-full z-10 flex h-24 items-center ">
 
 
-                <img src={headerlogo} className="w-48 self-start " alt="" />
+                <img src={headerlogo} className="md:w-48 w-32 self-start " alt="" />
 
-                <div className="flex-grow flex justify-start space-x-4 ml-5">
+                <div className="flex-grow md:flex justify-start space-x-4 ml-5 hidden">
 
 
                     <Link to="/home"><button className="btn">Home</button></Link>
@@ -29,7 +29,7 @@ const Header = () => {
                 </div>
 
 
-                <div className="flex items-center  space-x-4 px-5">
+                <div className="md:flex items-center  hidden space-x-4 px-5">
 
                     {user.email && <Link to={`/userPage/${user.email}`}> <button className="btn">Visit your page: {user.email} </button> </Link>}
 

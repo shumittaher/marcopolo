@@ -56,13 +56,13 @@ const BookingPage = () => {
 
 
     return (
-        <div className="flex justify-center border pt-32">
+        <div className="flex md:flex-row flex-col justify-center border pt-32">
 
-            <div className="w-2/4 h-auto border">
+            <div className="md:w-2/4 h-auto border">
                 <img className="object-cover w-full h-full" src={imageLink} alt="" />
             </div>
 
-            <div className="w-1/2 px-8 py-5 flex flex-col justify-between">
+            <div className="md:w-1/2 px-8 py-5 flex flex-col justify-between">
                 <div>
                     <h1 className="ttl mb-5">
                         {nameOfTour}

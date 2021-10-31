@@ -6,10 +6,10 @@ import discount from '../../images/designpics/discount.png'
 
 const MultiTours = () => {
     return (
-        <div className="flex justify-center items-center w-full max-w-6xl">
+        <div className="flex md:flex-row flex-col justify-center items-center w-full max-w-6xl mt-5">
 
 
-            <div className="w-1/2 h-full px-12 py-24 bg-yellow-50  rounded-3xl flex-col flex justify-around">
+            <div className="md:w-1/2 max-w-sm md:max-w-6xl  h-full md:px-12 md:py-24 px-5 py-8 bg-yellow-50  rounded-3xl flex-col flex justify-around">
 
                 <div style={{
                     transform: "rotate(6deg)"
@@ -29,7 +29,7 @@ const MultiTours = () => {
                         className="absolute z-0" src={orangesquiggle} alt="" />
                 </div>
 
-                <p className="mb-24 text-gray-500    p-2  font-semibold	">Book a tour today and enjoy exclusive savings on any future trip you book! There’s no time limit or expiry date on these savings
+                <p className="md:mb-24 text-gray-500    p-2  font-semibold	">Book a tour today and enjoy exclusive savings on any future trip you book! There’s no time limit or expiry date on these savings
                 </p>
 
                 <img src={discount} alt="" />
@@ -37,7 +37,7 @@ const MultiTours = () => {
 
             </div>
 
-            <div className="w-1/2 h-screen flex-col flex justify-around">
+            <div className="md:w-1/2 max-w-sm md:max-w-6xl md:h-screen flex-col flex justify-around">
                 <img src={multitravelers} alt="" />
             </div>
 

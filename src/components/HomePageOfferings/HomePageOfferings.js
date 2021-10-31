@@ -22,12 +22,12 @@ const HomePageOfferings = () => {
         <section className="my-12 flex flex-col w-full max-w-6xl justify-center items-center relative text-center ">
             
             
-            <svg onClick={prevSlide} className="w-20 h-20 left-0 cursor-pointer	absolute z-10 opacity-70" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="black">
+            <svg onClick={prevSlide} className="md:w-20 md:h-20 w-12 h-12 left-0 cursor-pointer	absolute z-10 opacity-70" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="black">
                 <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm.707-10.293a1 1 0 00-1.414-1.414l-3 3a1 1 0 000 1.414l3 3a1 1 0 001.414-1.414L9.414 11H13a1 1 0 100-2H9.414l1.293-1.293z" clipRule="evenodd" />
             </svg>
             
             
-            <svg onClick={nextSlide} className="w-20 h-20 right-0 cursor-pointer absolute z-10 opacity-70" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="black">
+            <svg onClick={nextSlide} className="md:w-20 md:h-20 w-12 h-12 right-0 cursor-pointer absolute z-10 opacity-70" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="black">
                 <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-8.707l-3-3a1 1 0 00-1.414 1.414L10.586 9H7a1 1 0 100 2h3.586l-1.293 1.293a1 1 0 101.414 1.414l3-3a1 1 0 000-1.414z" clipRule="evenodd" />
             </svg>
 

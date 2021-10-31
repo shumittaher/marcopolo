@@ -7,8 +7,9 @@ import happytraveler from '../../images/designpics/happytraveler.png'
 
 const NeverAlone = () => {
     return (
-        <div className="flex justify-center items-center w-full max-w-6xl">
-            <div className="w-1/2 h-full flex-col flex justify-around">
+        <div className="flex flex-col md:flex-row justify-center items-center w-full max-w-6xl">
+            
+            <div className="md:w-1/2 max-w-sm md:max-w-6xl h-full flex-col flex justify-around">
 
                 <div style={{
                     transform: "rotate(-6deg)"
@@ -28,10 +29,10 @@ const NeverAlone = () => {
                     }}
                         className="absolute z-0" src={orangesquiggle} alt="" />
                 </div>
-                <img src={happytraveler} alt="" />
+                <img src={happytraveler}  alt="" />
             </div>
 
-            <div className="w-1/2 h-full px-12 py-24 bg-yellow-50  rounded-3xl flex-col flex justify-around">
+            <div className="md:w-1/2 max-w-sm md:max-w-6xl  h-full md:px-12 md:py-24 px-5 py-8 bg-yellow-50  rounded-3xl flex-col flex justify-around">
 
                 <p className="mb-10 text-gray-500    p-2  font-semibold	">Since 2014, we’ve helped more than 500,000 people of all ages enjoy the best outdoor experience of their lives. Whether it’s for one day or a two-week vacation, close to home or a foreign land and something like that.
                 </p>
@@ -47,7 +48,7 @@ const NeverAlone = () => {
                     <p className="text-lg ">SLEEP & TRAVEL IN <br /> COMFORT</p>
                 </div>
 
-                <div className=" flex mb-10">
+                <div className=" flex mb-3">
                     <img style={{ width: '48px' }} src={licenced} className="mr-5" alt="" />
                     <p className="text-lg ">FULLY LICENSED TOUR <br /> OPERATOR</p>
                 </div>

@@ -30,14 +30,14 @@ const AllTrips = () => {
                     <table className="table-auto">
                         <thead>
                             <tr>
-                                <th></th>
-                                <th>User</th>
+                                <th className="hidden md:block"></th>
+                                <th className="hidden md: table-cell">User</th>
                                 <th>Destination</th>
                                 <th>Place</th>
-                                <th>Trip Start Date</th>
-                                <th>Trip End Date</th>
+                                <th>Start Date</th>
+                                <th>End Date</th>
                                 <th>Cost</th>
-                                <th>Delete?</th>
+                                <th></th>
                             </tr>
                         </thead>
                         {

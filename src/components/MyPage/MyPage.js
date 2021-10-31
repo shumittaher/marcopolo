@@ -21,7 +21,7 @@ const MyPage = () => {
     }
 
     return (
-        <div className="flex justify-center border pt-32">
+        <div className="flex justify-center pt-32">
             <div className="text-center	">
 
                 <h1>Tours planned for : {email}</h1>
@@ -33,13 +33,13 @@ const MyPage = () => {
                     <table className="table-auto">
                         <thead>
                             <tr>
-                                <th></th>
+                                <th className="hidden md:inline"></th>
                                 <th>Destination</th>
                                 <th>Place</th>
-                                <th>Trip Start Date</th>
-                                <th>Trip End Date</th>
+                                <th>Start Date</th>
+                                <th>End Date</th>
                                 <th>Cost</th>
-                                <th>Delete?</th>
+                                <th></th>
                             </tr>
                         </thead>
 
