@@ -47,7 +47,9 @@ const Header = () => {
 
             <i onClick={handleToggle} className="fas fa-bars block text-5xl md:hidden mr-5 cursor-pointer"></i>
 
-            <div style={{ display: `${menuStyle}` }} className="absolute bg-yellow-50 flex-col top-24 right-0 text-right text-indigo-700 p-5 bg-opacity-80 ">
+            <div style={{ display: `${menuStyle}` }} className=
+            "absolute bg-yellow-50 flex-col top-24 right-0 text-right text-indigo-700 p-5 bg-opacity-80 "
+            >
 
                 <Link to="/home"><button className="p-2 font-bold">Home</button></Link>
 
