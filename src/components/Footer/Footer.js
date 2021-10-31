@@ -4,11 +4,13 @@ import logo from '../../images/designpics/logo.png'
 const Footer = () => {
     return (
 
-        <div className="bg-indigo-900 mt-20 py-10 px-44">
+        <div id="about" className="bg-indigo-900 mt-20 py-10 px-44">
+
 
             <div className="flex justify-around text-white  ">
 
                 <div className="flex flex-col font-bold">
+                    <h1>ABOUT US</h1>
 
                     <img className="mb-12 w-80" src={logo} alt="" />
 

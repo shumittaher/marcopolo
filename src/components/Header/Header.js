@@ -2,6 +2,8 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import useAuth from './../../hooks/useAuth';
 import headerlogo from '../../images/designpics/headerlogo.png'
+import { HashLink  } from 'react-router-hash-link';
+
 
 const Header = () => {
 
@@ -20,6 +22,8 @@ const Header = () => {
 
 
                     <Link to="/destinations"> <button className="btn">Destinations</button ></Link>
+
+                    <HashLink to="/home#about"> <button className="btn">About</button ></HashLink>
 
 
                 </div>
