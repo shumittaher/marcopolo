@@ -2,7 +2,10 @@ import React, { useContext } from 'react'
 import { useForm } from 'react-hook-form';
 import { useParams } from 'react-router'
 import useAuth from '../../hooks/useAuth';
-import { ToursContext } from '../../contexts/ToursProvider';
+import { ToursContext } from '../../contexts/toursProvider';
+
+const apiUrl = process.env.REACT_APP_API_URL;
+
 
 const BookingPage = () => {
     const { reset, register, handleSubmit } = useForm();
@@ -36,7 +39,7 @@ const BookingPage = () => {
             const userEmail = user.email
             const newSchedule = { userEmail, id, tourStart, tourEnd }
 
-            fetch('https://pacific-cove-20307.herokuapp.com/addSchedule', {
+            fetch(`${apiUrl}/addSchedule`, {
                 method: 'POST',
                 headers: {
                     'content-type': 'application/json'

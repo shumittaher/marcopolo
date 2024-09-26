@@ -1,6 +1,8 @@
 import React, { useContext } from 'react'
 import { useLocation } from 'react-router';
-import { ToursContext } from '../../contexts/ToursProvider';
+import { ToursContext } from '../../contexts/toursProvider';
+
+const apiUrl = process.env.REACT_APP_API_URL;
 
 const TripDetails = (props) => {
 
@@ -18,7 +20,7 @@ const TripDetails = (props) => {
         const confirm = window.confirm("Are you sure?")
 
         if (confirm) {
-            fetch(`https://pacific-cove-20307.herokuapp.com/schedule/${_id}`, {
+            fetch(`${apiUrl}/schedule/${_id}`, {
                 method: 'DELETE'
             })
                 .then(res => res.json())

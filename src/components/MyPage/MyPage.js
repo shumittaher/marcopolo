@@ -2,6 +2,9 @@ import React, { useEffect, useState } from 'react'
 import TripDetails from '../TripDetails/TripDetails';
 import useAuth from './../../hooks/useAuth';
 
+const apiUrl = process.env.REACT_APP_API_URL;
+
+
 const MyPage = () => {
 
     const { user } = useAuth()
@@ -9,7 +12,7 @@ const MyPage = () => {
     const [schedule, setSchedule] = useState([])
 
     useEffect(() => {
-        fetch(`https://pacific-cove-20307.herokuapp.com/schedule/${email}`)
+        fetch(`${apiUrl}/schedule/${email}`)
             .then(res => res.json())
             .then(data => setSchedule(data));
     }, [email])

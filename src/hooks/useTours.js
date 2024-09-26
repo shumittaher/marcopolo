@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react'
+const apiUrl = process.env.REACT_APP_API_URL;
 
 
 const useTours = () => {
@@ -6,7 +7,7 @@ const useTours = () => {
     const [tours, setTours] = useState([])
 
     useEffect(() => {
-        fetch('https://pacific-cove-20307.herokuapp.com/services')
+        fetch(`${apiUrl}/services`)
             .then(res => res.json())
             .then(result => {
                 setTours(result)

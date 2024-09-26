@@ -1,32 +1,33 @@
 import React from 'react'
 import { useForm } from "react-hook-form";
 
-
 const AddServiceForm = () => {
     
     const { reset, register, handleSubmit, formState: { errors } } = useForm();
 
     const onSubmit = data => {
-
-        fetch('https://pacific-cove-20307.herokuapp.com/addService', {
+        
+        fetch(`${process.env.REACT_APP_API_URL}/addService`,{
             method: 'POST',
             headers: {
                 'content-type': 'application/json'
             },
             body: JSON.stringify(data)
         })
-            .then(res => res.json())
-            .then(result => {
-                if (result.insertedId) {
-                    alert('success')
-                    reset()
-                }
-            })
-
-    };
+        .then(res => res.json())
+        .then(result => {
+            if (result.insertedId) {
+                alert('success')
+                reset()
+            } else{
+                return
+            }
+        })
+    }
 
     return (
         <div>
+
              <div className="small-container">
                 <h6 className="ttl">Add New Tours</h6>
 
@@ -56,5 +57,6 @@ const AddServiceForm = () => {
         </div>
     )
 }
+
 
 export default AddServiceForm

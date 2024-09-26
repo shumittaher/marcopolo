@@ -1,12 +1,15 @@
 import React, { useEffect, useState } from 'react'
 import TripDetails from '../TripDetails/TripDetails'
 
+const apiUrl = process.env.REACT_APP_API_URL;
+
+
 const AllTrips = () => {
 
     const [allSchedules, setAllSchedules] = useState([])
 
     useEffect(() => {
-        fetch('https://pacific-cove-20307.herokuapp.com/allSchedules')
+        fetch(`${apiUrl}/allSchedules`)
             .then(res => res.json())
             .then(result => {
                 setAllSchedules(result)
@@ -31,7 +34,7 @@ const AllTrips = () => {
                         <thead>
                             <tr>
                                 <th className="hidden md:block"></th>
-                                <th className="hidden md: table-cell">User</th>
+                                <th className="hidden md:table-cell">User</th>
                                 <th>Destination</th>
                                 <th>Place</th>
                                 <th>Start Date</th>

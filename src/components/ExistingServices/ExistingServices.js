@@ -1,11 +1,10 @@
 import React, { useContext } from 'react'
-import { ToursContext } from '../../contexts/ToursProvider'
+import { ToursContext } from '../../contexts/toursProvider'
 
 const ExistingServices = () => {
 
     const { tours } = useContext(ToursContext)
-console.log(tours)
-
+    
     return (
         <div>
             <div className="small-container h-full">
